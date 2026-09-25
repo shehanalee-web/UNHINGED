@@ -45,10 +45,18 @@ export function ArtifactFrame({
           ) : null}
         </div>
         <footer className="mt-auto flex flex-wrap items-center justify-between gap-2 border-t border-ink px-3 py-2 font-mono text-[11px] uppercase">
-          <span>{COPYRIGHT}</span>
-          <span aria-hidden="true">{DECORATIVE_LINKS.map((label) => `[ ${label} ]`).join(" ")}</span>
-        </footer>
-      </div>
-    </div>
-  );
+  <span>{COPYRIGHT}</span>
+
+  <a
+    href="https://ko-fi.com/askthecouncil"
+    target="_blank"
+    rel="noreferrer"
+    className="underline decoration-dotted underline-offset-4"
+  >
+    [ FEED THE COUNCIL ]
+  </a>
+  </footer>
+</div>
+</div>
+);
 }
